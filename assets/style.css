@@ -144,3 +144,5 @@ html[dir=rtl] .car .track{direction:ltr}
   .car .prev{inset-inline-start:-16px}
   .car .next{inset-inline-end:-16px}
 }
+
+@media(max-width:640px){.hdr .bar{padding:8px 12px;gap:8px}.hdr .brand{order:1}.hdr .lang{order:2;margin-inline-start:auto}.nav{order:3;flex:1 1 100%;flex-wrap:wrap;overflow:visible;gap:4px}.nav a{font-size:13.5px;padding:5px 10px}}
