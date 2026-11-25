@@ -147,3 +147,12 @@ html[dir=rtl] .car .track{direction:ltr}
 }
 
 @media(max-width:640px){.hdr .bar{padding:8px 12px;gap:8px}.hdr .brand{order:1}.hdr .lang{order:2;margin-inline-start:auto}.nav{order:3;flex:1 1 100%;flex-wrap:wrap;overflow:visible;gap:4px}.nav a{font-size:13.5px;padding:5px 10px}}
+
+/* payment gateways */
+.gws{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:14px}
+.gw{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 12px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:12px;min-height:120px}
+.gw img{max-width:100%;max-height:52px;height:auto;width:auto;object-fit:contain;flex:1}
+.gw .tag{font-size:13px;font-weight:700;padding:4px 12px;border-radius:999px}
+.gw .tag.ok{background:#d1fae5;color:#065f46}
+.gw .tag.soon{background:#fef3c7;color:#92400e}
+.gw.dark{background:#0b1d3f;border-color:#0b1d3f}.gw.dark .tag.ok{background:#d1fae5}
