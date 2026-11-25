@@ -12,8 +12,8 @@ var FEATURES=[
    {id:'timed',ic:'⏱',
     ar:{t:'اختبار مؤقت بأمان',d:'وقت محدد لكل اختبار مع قفل تلقائي، وحماية ضد الغش أثناء الأداء.'},
     en:{t:'Timed and secured',d:'A time limit per quiz with auto-submit, plus anti-cheat protection during the attempt.'},
-    pts:{ar:['عداد تنازلي ظاهر للطالب','تسليم تلقائي عند انتهاء الوقت','قيود على إعادة الدخول والتنقل أثناء الاختبار'],
-         en:['Visible countdown for the student','Auto-submit when time runs out','Limits on re-entry and navigation during the quiz']}},
+    pts:{ar:['عداد تنازلي ظاهر للطالب','تسليم تلقائي عند انتهاء الوقت','حجب محتوى الاختبار لو خرج الطالب من التطبيق'],
+         en:['Visible countdown for the student','Auto-submit when time runs out','Quiz content is hidden if the student leaves the app']}},
    {id:'grading',ic:'✅',
     ar:{t:'تصحيح تلقائي ونتائج',d:'التصحيح فوري، والمعلم يقرر متى تظهر الدرجات والإجابات الصحيحة للطلاب.'},
     en:{t:'Auto-grading and results',d:'Grading is instant, and the teacher decides when scores and correct answers become visible.'},
@@ -52,8 +52,8 @@ var FEATURES=[
    {id:'subs',ic:'💳',
     ar:{t:'اشتراكات مدفوعة',d:'بيع المقررات باشتراكات مدفوعة عبر بوابة دفع إلكترونية، مع تفعيل تلقائي بعد الدفع.'},
     en:{t:'Paid subscriptions',d:'Sell courses as paid subscriptions through an online payment gateway, activated automatically after payment.'},
-    pts:{ar:['دفع إلكتروني آمن عبر Paymob','تفعيل الاشتراك تلقائيًا بعد نجاح الدفع','إدارة الاشتراكات من لوحة الإدارة'],
-         en:['Secure online payment via Paymob','Subscription activates automatically after payment','Subscriptions managed from the admin panel']}},
+    pts:{ar:['دفع إلكتروني عبر بوابة دفع (Paymob)','تفعيل الاشتراك بعد تأكيد الدفع','إدارة الاشتراكات من لوحة الإدارة'],
+         en:['Online payment through a payment gateway (Paymob)','Subscription activates once payment is confirmed','Subscriptions managed from the admin panel']}},
    {id:'scorm',ic:'🎞',
     ar:{t:'محتوى SCORM تفاعلي',d:'رفع وتشغيل حزم SCORM التعليمية داخل المقرر مع تتبع تقدم الطالب فيها.'},
     en:{t:'Interactive SCORM content',d:'Upload and play SCORM packages inside courses, with student progress tracking.'},
@@ -92,8 +92,8 @@ var FEATURES=[
    {id:'calendar',ic:'🗓',
     ar:{t:'التقويم والمهام',d:'الاختبارات القادمة والمهام والتسليمات مجمعة في تقويم واحد واضح.'},
     en:{t:'Calendar and tasks',d:'Upcoming quizzes, tasks and deadlines gathered in one clear calendar.'},
-    pts:{ar:['اختبارات ومهام في مكان واحد','تواريخ التسليم واضحة','تذكير قبل المواعيد المهمة'],
-         en:['Quizzes and tasks in one place','Clear due dates','Reminders before important dates']}},
+    pts:{ar:['اختبارات ومهام في مكان واحد','تواريخ التسليم واضحة','تذكير قبل بدء الاختبار بعشر دقائق'],
+         en:['Quizzes and tasks in one place','Clear due dates','Quiz start reminder 10 minutes ahead']}},
    {id:'chat',ic:'💬',
     ar:{t:'المحادثات',d:'تواصل مباشر بين الطالب والمعلم من داخل التطبيق، بدون تطبيقات خارجية.'},
     en:{t:'Chat',d:'Direct messaging between students and teachers inside the app, no external apps needed.'},
@@ -216,4 +216,4 @@ function buildExplorer(mount){
   if(!find(initial))initial=[];
   render(initial);
   document.addEventListener('langchange',function(){render(currentPath())});
-  }
+}
