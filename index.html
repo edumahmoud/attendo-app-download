@@ -44,6 +44,49 @@ a{color:var(--gd)}
 .btn{color:#fff}
 [data-l]{display:none}
 html[lang=ar] [data-l=ar],html[lang=en] [data-l=en]{display:revert}
+
+.sec{margin-top:46px}
+.sec>h2{font-size:26px;color:var(--gd);text-align:center}
+.sec>p.lead{color:var(--mut);text-align:center;max-width:560px;margin:6px auto 22px}
+.star{background:linear-gradient(135deg,#065f46,#059669);color:#fff;border-radius:22px;padding:24px 20px;display:grid;grid-template-columns:1fr;gap:18px;align-items:center;box-shadow:0 14px 34px rgba(5,150,105,.28)}
+.star h3{font-size:22px;margin-bottom:6px}.star p{opacity:.95;font-size:16px}
+.star ul{margin:10px 0 0;padding-inline-start:20px}.star li{margin:5px 0;font-size:15.5px}
+.tag{display:inline-block;background:#fde68a;color:#78350f;font-weight:700;font-size:13px;padding:3px 12px;border-radius:999px;margin-bottom:10px}
+.phones{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:26px 14px;justify-items:center;margin-top:24px}
+.pf{margin:0;text-align:center;width:min(100%,250px)}
+.pf figcaption{margin-top:10px;font-weight:700;color:var(--gd);font-size:15px}
+.star .pf figcaption{color:#fff}
+.ph{background:#0f172a;border-radius:34px;padding:9px;box-shadow:0 18px 40px rgba(15,23,42,.28);position:relative}
+.nt{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:70px;height:16px;background:#0f172a;border-radius:0 0 12px 12px;z-index:3}
+.sc{background:#f8fafc;border-radius:26px;height:470px;overflow:hidden;display:flex;flex-direction:column;text-align:start;color:#0f172a;direction:inherit}
+.ab{background:#0369a1;color:#fff;padding:26px 14px 10px;font-size:14px}
+.bd{flex:1;padding:10px;overflow:hidden;display:flex;flex-direction:column;gap:8px}
+.bd.c{align-items:center;text-align:center}
+.bn{display:flex;border-top:1px solid #e2e8f0;background:#fff;padding:5px 0}
+.bn div{flex:1;text-align:center;color:#64748b}.bn em{display:block;font-style:normal;font-size:15px}.bn small{font-size:9px}
+.bn .on{color:#0369a1;font-weight:700}
+.row3{display:flex;gap:6px}.st{flex:1;background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:7px 4px;text-align:center}
+.st b{display:block;font-size:16px;color:#0369a1}.st small{font-size:9px;display:block;white-space:nowrap;color:#64748b}
+.cd{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:9px 10px;font-size:11.5px}
+.cd h4{font-size:12px;color:#0f172a;margin-bottom:4px}.cd p{margin:3px 0;color:#334155}
+.hi{font-weight:700;font-size:14px}
+.pb{height:7px;background:#e2e8f0;border-radius:9px;overflow:hidden;margin:4px 0}.pb i{display:block;height:100%;background:#059669}
+.bd small{font-size:10.5px;color:#64748b}
+.tm{align-self:center;background:#fef3c7;color:#92400e;border-radius:999px;padding:2px 12px;font-size:12px;font-weight:700}
+.q h4{font-size:12.5px;margin-bottom:8px}
+.op{border:1px solid #cbd5e1;border-radius:9px;padding:7px 9px;margin:5px 0;font-size:12px;background:#fff}
+.op.sel{border-color:#059669;background:#ecfdf5;color:#065f46;font-weight:700}
+.btn2{background:#059669;color:#fff;text-align:center;border-radius:10px;padding:8px;font-weight:700;font-size:12.5px}
+.btn2.sm{padding:6px;font-size:11.5px}
+.qr{width:128px;height:128px;margin:6px 0;border-radius:8px;background:
+ conic-gradient(#0f172a 25%,#fff 0 50%,#0f172a 0 75%,#fff 0) 0 0/16px 16px;border:6px solid #fff;box-shadow:0 0 0 1px #cbd5e1}
+.ag{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px}.ag b{font-size:12px;flex:1}.ag small{width:100%}
+.ag.off{opacity:.65}
+.bg{background:#d1fae5;color:#065f46;border-radius:999px;font-size:9.5px;padding:1px 8px;font-weight:700}.bg.g{background:#e2e8f0;color:#475569}
+.bars{display:flex;align-items:flex-end;gap:6px;height:70px}.bars i{flex:1;background:#0369a1;border-radius:4px 4px 0 0}
+.rw{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #f1f5f9;font-size:12px}.rw:last-child{border:0}.rw b{color:#0369a1}
+.note{text-align:center;color:var(--mut);font-size:12.5px;margin-top:14px}
+@media(min-width:760px){.star{grid-template-columns:1.1fr .9fr;padding:30px}.star .pf{justify-self:center}}
 </style>
 </head>
 <body>
@@ -72,6 +115,64 @@ html[lang=ar] [data-l=ar],html[lang=en] [data-l=en]{display:revert}
     <div><span class="e">📚</span><b data-l="ar">مقررات</b><b data-l="en">Courses</b></div>
     <div><span class="e">🔔</span><b data-l="ar">إشعارات</b><b data-l="en">Notifications</b></div>
   </div>
+
+
+  <section class="sec" id="student">
+    <h2>🎓 <span data-l="ar">للطالب</span><span data-l="en">For students</span></h2>
+    <p class="lead"><span data-l="ar">كل ما يحتاجه الطالب في مكان واحد: مقرراته واختباراته وحضوره.</span><span data-l="en">Everything a student needs in one place: courses, quizzes and attendance.</span></p>
+    <div class="phones">
+      <figure class="pf "><div class="ph"><div class="nt"></div><div class="sc"><div class="ab"><b><span data-l="ar">الرئيسية</span><span data-l="en">Home</span></b></div><div class="bd">
+<div class="hi"><span data-l="ar">أهلًا يا طالب تجريبي 👋</span><span data-l="en">Hi, Demo Student 👋</span></div>
+<div class="row3"><div class="st"><b>4</b><small><span data-l="ar">مقررات</span><span data-l="en">Courses</span></small></div><div class="st"><b>2</b><small><span data-l="ar">قادمة</span><span data-l="en">Upcoming</span></small></div><div class="st"><b>92%</b><small><span data-l="ar">الحضور</span><span data-l="en">Present</span></small></div></div>
+<div class="cd"><h4><span data-l="ar">التقويم</span><span data-l="en">Calendar</span></h4><p>📝 <span data-l="ar">اختبار الوحدة الأولى · غدًا 10:00</span><span data-l="en">Unit 1 quiz · Tomorrow 10:00</span></p><p>📌 <span data-l="ar">تسليم المهمة · الخميس</span><span data-l="en">Assignment due · Thu</span></p></div>
+<div class="cd"><h4><span data-l="ar">مقرراتي</span><span data-l="en">My courses</span></h4><div class="pb"><i style="width:72%"></i></div><small><span data-l="ar">الأحياء · 72%</span><span data-l="en">Biology · 72%</span></small><div class="pb"><i style="width:45%"></i></div><small><span data-l="ar">الكيمياء · 45%</span><span data-l="en">Chemistry · 45%</span></small></div>
+</div><div class="bn"><div class="on"><em>🏠</em><small><span data-l="ar">الرئيسية</span><span data-l="en">Home</span></small></div><div class=""><em>📚</em><small><span data-l="ar">المقررات</span><span data-l="en">Courses</span></small></div><div class=""><em>📝</em><small><span data-l="ar">الاختبارات</span><span data-l="en">Quizzes</span></small></div><div class=""><em>💬</em><small><span data-l="ar">المحادثات</span><span data-l="en">Chat</span></small></div><div class=""><em>🔔</em><small><span data-l="ar">الإشعارات</span><span data-l="en">Alerts</span></small></div></div></div></div><figcaption><span data-l="ar">الرئيسية والتقويم</span><span data-l="en">Home and calendar</span></figcaption></figure>
+      <figure class="pf "><div class="ph"><div class="nt"></div><div class="sc"><div class="ab"><b><span data-l="ar">اختبار الوحدة الأولى</span><span data-l="en">Unit 1 quiz</span></b></div><div class="bd">
+<div class="tm">⏱ 08:42</div><div class="pb"><i style="width:40%"></i></div><small><span data-l="ar">سؤال 4 من 10</span><span data-l="en">Question 4 of 10</span></small>
+<div class="cd q"><h4><span data-l="ar">أي عضو في الخلية مسؤول عن إنتاج الطاقة؟</span><span data-l="en">Which organelle produces the cell's energy?</span></h4>
+<div class="op"><span data-l="ar">النواة</span><span data-l="en">Nucleus</span></div><div class="op sel"><span data-l="ar">الميتوكوندريا</span><span data-l="en">Mitochondria</span></div><div class="op"><span data-l="ar">الريبوسوم</span><span data-l="en">Ribosome</span></div><div class="op"><span data-l="ar">الجسم المركزي</span><span data-l="en">Centrosome</span></div></div>
+<div class="btn2"><span data-l="ar">التالي</span><span data-l="en">Next</span></div></div></div></div><figcaption><span data-l="ar">اختبارات تفاعلية بتوقيت</span><span data-l="en">Timed interactive quizzes</span></figcaption></figure>
+      <figure class="pf "><div class="ph"><div class="nt"></div><div class="sc"><div class="ab"><b><span data-l="ar">تسجيل الحضور</span><span data-l="en">Attendance</span></b></div><div class="bd c">
+<div class="qr"></div><small><span data-l="ar">امسح رمز QR المعروض في القاعة</span><span data-l="en">Scan the QR code shown in class</span></small>
+<div class="cd" style="width:100%"><p>📍 <span data-l="ar">الموقع: داخل نطاق القاعة</span><span data-l="en">Location: inside the classroom range</span></p><p>✅ <span data-l="ar">تم تسجيل حضورك</span><span data-l="en">Your attendance is recorded</span></p></div></div><div class="bn"><div class=""><em>🏠</em><small><span data-l="ar">الرئيسية</span><span data-l="en">Home</span></small></div><div class="on"><em>📚</em><small><span data-l="ar">المقررات</span><span data-l="en">Courses</span></small></div><div class=""><em>📝</em><small><span data-l="ar">الاختبارات</span><span data-l="en">Quizzes</span></small></div><div class=""><em>💬</em><small><span data-l="ar">المحادثات</span><span data-l="en">Chat</span></small></div><div class=""><em>🔔</em><small><span data-l="ar">الإشعارات</span><span data-l="en">Alerts</span></small></div></div></div></div><figcaption><span data-l="ar">حضور بـ QR وGPS</span><span data-l="en">QR and GPS attendance</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="sec" id="teacher">
+    <h2>👨‍🏫 <span data-l="ar">للمعلم</span><span data-l="en">For teachers</span></h2>
+    <p class="lead"><span data-l="ar">أدوات لإدارة المقررات والاختبارات والطلاب، ومعها ميزة الوكلاء.</span><span data-l="en">Tools to run courses, quizzes and students, plus the Agents feature.</span></p>
+    <div class="star">
+      <div>
+        <span class="tag">⭐ <span data-l="ar">ميزة مميزة</span><span data-l="en">Featured</span></span>
+        <h3><span data-l="ar">الوكلاء: مراكز ومكاتب تسجّل لك الطلاب</span><span data-l="en">Agents: centers and offices that register students for you</span></h3>
+        <p><span data-l="ar">أنشئ لكل مركز أو مكتب حسابًا مستقلًا (وكيل)، وهو يسجّل الطلاب في مقرراتك.</span><span data-l="en">Create an independent account (an agent) for each center or office, and it registers students in your courses.</span></p>
+        <ul>
+          <li><span data-l="ar">حساب مستقل لكل وكيل، بكلمة مرور مؤقتة</span><span data-l="en">A separate account per agent, with a temporary password</span></li>
+          <li><span data-l="ar">متابعة عدد التسجيلات والطلاب لكل وكيل</span><span data-l="en">See registrations and students per agent</span></li>
+          <li><span data-l="ar">إيقاف الوكيل أو تنشيطه في أي وقت</span><span data-l="en">Disable or re-enable an agent anytime</span></li>
+          <li><span data-l="ar">تحكّم في الأقسام التي يراها الوكيل</span><span data-l="en">Choose which sections the agent can see</span></li>
+        </ul>
+      </div>
+      <figure class="pf "><div class="ph"><div class="nt"></div><div class="sc"><div class="ab"><b><span data-l="ar">الوكلاء</span><span data-l="en">Agents</span></b></div><div class="bd">
+<div class="row3"><div class="st"><b>3</b><small><span data-l="ar">الوكلاء</span><span data-l="en">Agents</span></small></div><div class="st"><b>128</b><small><span data-l="ar">تسجيلات</span><span data-l="en">Registrations</span></small></div><div class="st"><b>2</b><small><span data-l="ar">نشط</span><span data-l="en">Active</span></small></div></div>
+<div class="btn2 sm">+ <span data-l="ar">وكيل جديد</span><span data-l="en">New agent</span></div>
+<div class="cd ag"><b><span data-l="ar">المركز الرئيسي (تجريبي)</span><span data-l="en">Main center (demo)</span></b><span class="bg"><span data-l="ar">نشط</span><span data-l="en">Active</span></span><small><span data-l="ar">64 طالب · 3 مقررات</span><span data-l="en">64 students · 3 courses</span></small></div>
+<div class="cd ag"><b><span data-l="ar">مكتب النور (تجريبي)</span><span data-l="en">Al Noor office (demo)</span></b><span class="bg"><span data-l="ar">نشط</span><span data-l="en">Active</span></span><small><span data-l="ar">41 طالب · 2 مقررات</span><span data-l="en">41 students · 2 courses</span></small></div>
+<div class="cd ag off"><b><span data-l="ar">مكتب الأمل (تجريبي)</span><span data-l="en">Al Amal office (demo)</span></b><span class="bg g"><span data-l="ar">معطّل</span><span data-l="en">Disabled</span></span><small><span data-l="ar">23 طالب · مقرر واحد</span><span data-l="en">23 students · 1 course</span></small></div>
+</div><div class="bn"><div class=""><em>📊</em><small><span data-l="ar">لوحة التحكم</span><span data-l="en">Dashboard</span></small></div><div class=""><em>📚</em><small><span data-l="ar">المقررات</span><span data-l="en">Courses</span></small></div><div class="on"><em>🤝</em><small><span data-l="ar">الوكلاء</span><span data-l="en">Agents</span></small></div><div class=""><em>💬</em><small><span data-l="ar">المحادثات</span><span data-l="en">Chat</span></small></div><div class=""><em>🔔</em><small><span data-l="ar">الإشعارات</span><span data-l="en">Alerts</span></small></div></div></div></div><figcaption><span data-l="ar">شاشة الوكلاء</span><span data-l="en">Agents screen</span></figcaption></figure>
+    </div>
+    <div class="phones">
+      <figure class="pf "><div class="ph"><div class="nt"></div><div class="sc"><div class="ab"><b><span data-l="ar">لوحة التحكم</span><span data-l="en">Dashboard</span></b></div><div class="bd">
+<div class="row3"><div class="st"><b>6</b><small><span data-l="ar">مقررات</span><span data-l="en">Courses</span></small></div><div class="st"><b>212</b><small><span data-l="ar">طلاب</span><span data-l="en">Students</span></small></div><div class="st"><b>9</b><small><span data-l="ar">اختبارات</span><span data-l="en">Quizzes</span></small></div></div>
+<div class="cd"><h4><span data-l="ar">متوسط الدرجات</span><span data-l="en">Average score</span></h4><div class="bars"><i style="height:50%"></i><i style="height:70%"></i><i style="height:60%"></i><i style="height:85%"></i><i style="height:75%"></i><i style="height:92%"></i></div></div>
+<div class="cd"><h4><span data-l="ar">آخر النشاط</span><span data-l="en">Recent activity</span></h4><p>📝 <span data-l="ar">12 طالب سلّموا اختبار الوحدة 1</span><span data-l="en">12 students submitted Unit 1 quiz</span></p><p>🤝 <span data-l="ar">وكيل جديد سجّل 5 طلاب</span><span data-l="en">An agent registered 5 students</span></p></div></div><div class="bn"><div class="on"><em>📊</em><small><span data-l="ar">لوحة التحكم</span><span data-l="en">Dashboard</span></small></div><div class=""><em>📚</em><small><span data-l="ar">المقررات</span><span data-l="en">Courses</span></small></div><div class=""><em>🤝</em><small><span data-l="ar">الوكلاء</span><span data-l="en">Agents</span></small></div><div class=""><em>💬</em><small><span data-l="ar">المحادثات</span><span data-l="en">Chat</span></small></div><div class=""><em>🔔</em><small><span data-l="ar">الإشعارات</span><span data-l="en">Alerts</span></small></div></div></div></div><figcaption><span data-l="ar">لوحة التحكم والإحصائيات</span><span data-l="en">Dashboard and stats</span></figcaption></figure>
+      <figure class="pf "><div class="ph"><div class="nt"></div><div class="sc"><div class="ab"><b><span data-l="ar">نتائج الاختبار</span><span data-l="en">Quiz results</span></b></div><div class="bd">
+<div class="row3"><div class="st"><b>81%</b><small><span data-l="ar">المتوسط</span><span data-l="en">Average</span></small></div><div class="st"><b>96</b><small><span data-l="ar">أعلى درجة</span><span data-l="en">Highest</span></small></div><div class="st"><b>38/42</b><small><span data-l="ar">سلّموا</span><span data-l="en">Submitted</span></small></div></div>
+<div class="cd"><div class="rw"><span><span data-l="ar">طالب تجريبي ١</span><span data-l="en">Demo student 1</span></span><b>96</b></div><div class="rw"><span><span data-l="ar">طالب تجريبي ٢</span><span data-l="en">Demo student 2</span></span><b>88</b></div><div class="rw"><span><span data-l="ar">طالب تجريبي ٣</span><span data-l="en">Demo student 3</span></span><b>74</b></div><div class="rw"><span><span data-l="ar">طالب تجريبي ٤</span><span data-l="en">Demo student 4</span></span><b>61</b></div></div>
+<div class="btn2 sm"><span data-l="ar">إظهار النتائج للطلاب</span><span data-l="en">Release results</span></div></div><div class="bn"><div class=""><em>📊</em><small><span data-l="ar">لوحة التحكم</span><span data-l="en">Dashboard</span></small></div><div class="on"><em>📚</em><small><span data-l="ar">المقررات</span><span data-l="en">Courses</span></small></div><div class=""><em>🤝</em><small><span data-l="ar">الوكلاء</span><span data-l="en">Agents</span></small></div><div class=""><em>💬</em><small><span data-l="ar">المحادثات</span><span data-l="en">Chat</span></small></div><div class=""><em>🔔</em><small><span data-l="ar">الإشعارات</span><span data-l="en">Alerts</span></small></div></div></div></div><figcaption><span data-l="ar">نتائج الاختبارات</span><span data-l="en">Quiz results</span></figcaption></figure>
+    </div>
+    <p class="note"><span data-l="ar">الشاشات توضيحية وببيانات تجريبية. شكل التطبيق الفعلي قد يختلف قليلًا.</span><span data-l="en">Screens are illustrations with demo data. The real app may differ slightly.</span></p>
+  </section>
 
   <section class="card warn">
     <h2>⚠️ <span data-l="ar">لو ظهرت رسالة من Google Play Protect</span><span data-l="en">If Google Play Protect shows a warning</span></h2>
