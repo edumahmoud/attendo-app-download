@@ -92,6 +92,7 @@ html[dir=rtl] .car .track{direction:ltr}
 .kid h4{font-size:16px;color:var(--gd);margin:6px 0 3px}
 .kid p{color:var(--mut);font-size:13.5px;line-height:1.55}
 .kid .go{color:var(--g);font-weight:700;font-size:13px;margin-top:8px;display:block}
+.kids a.kid{text-decoration:none;color:inherit;display:block}
 
 /* phone mockups */
 .star{background:linear-gradient(135deg,#065f46,#059669);color:#fff;border-radius:22px;padding:24px 20px;display:grid;grid-template-columns:1fr;gap:18px;align-items:center;box-shadow:0 14px 34px rgba(5,150,105,.28)}
